@@ -1,0 +1,19 @@
+Database Optimization:
+Assume you have an existing PostgreSQL database with a table named "orders" that 
+has the following columns: 
+• id (integer), 
+• customer_id (integer), 
+• order_date (date), 
+• total_amount (decimal).
+Optimize the following SQL query to improve its performance:
+SELECT * FROM orders WHERE customer_id = 123 ORDER BY order_date DESC;
+
+
+ANSWER:
+CREATE INDEX idx_customer_id_order_date ON orders (customer_id, order_date);
+
+SELECT * FROM orders
+WHERE customer_id = 123
+ORDER BY order_date DESC;
+
+The INDEX keyword creates an index on the customer_id and order_date columns. The index will be used by the database to quickly find the rows that match the WHERE clause. This will improve the performance of the query.

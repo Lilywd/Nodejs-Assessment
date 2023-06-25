@@ -1,0 +1,21 @@
+[
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "genre": "Science Fiction",
+      "published_date": "1979-04-12"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "published_date": "1954-09-29"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "published_date": "1813-01-28"
+    }
+  ]
+  
