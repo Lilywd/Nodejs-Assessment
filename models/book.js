@@ -11,4 +11,7 @@ const BookSchema = new mongoose.Schema({
     id: { type: mongoose.ObjectId }
 });
 
-module.exports = mongoose.model('Book', BookSchema);
+
+const Book = mongoose.model('Book', BookSchema);
+
+module.exports = Book;
